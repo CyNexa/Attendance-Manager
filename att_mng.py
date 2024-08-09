@@ -22,23 +22,18 @@ def dailyWish():
     if today == "Sunday" or today == "Monday":
         print("Its Holiday, Enjoy!")
         return 0
-
     elif today == "Tuesday":
         print("Its Tuesday, 6 Class Today!")
         return 6
-    
     elif today == "Wednesday":
         print("Its Wednesday, 6 Class Today!")
         return 6
-
     elif today == "Thursday":
         print("Its Thursday, 4 Class Today!")
         return 4
-
     elif today == "Friday":
         print("Its Friday, 6 Class Today!")
         return 6
-
     elif today == "Saturday":
         print("Its Saturday, 5 Class Today!")
         return 5
@@ -49,8 +44,7 @@ def attendances(day, scheduled, attended):
         'Date': [todayDate],
         'Day': [day],
         'Scheduled': [scheduled],
-        'Attended': [attended]
-    })
+        'Attended': [attended]})
     attendData = pd.concat([attendData, dailyData], ignore_index=True)
 
 # Base Code Here
